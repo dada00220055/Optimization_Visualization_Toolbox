@@ -574,6 +574,7 @@ def loss_plot(result, log_axis=False):
 
 def module2_loss_plot(result, log_axis=False):
     epochs = np.arange(len(result.trajectory))
+    axis_type = "log" if log_axis else "linear"
     fig = go.Figure()
     fig.add_trace(
         go.Scatter(
@@ -620,11 +621,10 @@ def module2_loss_plot(result, log_axis=False):
         },
         legend={"orientation": "h", "yanchor": "bottom", "y": 1.02, "xanchor": "left", "x": 0},
         dragmode="zoom",
-        uirevision=len(result.trajectory),
+        uirevision=f"{len(result.trajectory)}:{axis_type}",
     )
     fig.update_xaxes(rangeslider={"visible": True, "thickness": 0.13})
-    if log_axis:
-        fig.update_yaxes(type="log")
+    fig.update_yaxes(type=axis_type)
     return fig
 
 
