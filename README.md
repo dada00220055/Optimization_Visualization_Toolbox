@@ -1,4 +1,4 @@
-# Optimization Visualization Toolbox
+# Optimization Visualization Toolbox for Statistical Computing
 *A Comparative Study of Gradient-Based Algorithms*
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
@@ -68,7 +68,7 @@ All optimizers are implemented from scratch in `optimizers.py`:
 | **Gradient Descent (GD) / Mini-batch GD** | Decayed learning rate: $\alpha_t = \alpha_0 t^{-\gamma}$, $x_{t+1} = x_t - \alpha_t \nabla f(x_t)$ |
 | **SGD with Momentum (SGDM)** | Velocity vector tracking direction: $v_t = \rho v_{t-1} - \alpha_t \nabla f(x_t)$, $x_{t+1} = x_t + v_t$ |
 | **RMSProp** | Exponentially weighted moving average of squared gradients: $s_t = \rho s_{t-1} + (1-\rho) g_t^2$, $x_{t+1} = x_t - \frac{\eta}{\sqrt{s_t} + \epsilon} g_t$ |
-| **Adam** | First and second moment estimation with bias corrections: $m_t = \beta_1 m_{t-1} + (1-\beta_1)g_t$, $v_t = \beta_2 v_{t-1} + (1-\beta_2)g_t^2$, $\hat{m}_t = \frac{m_t}{1-\beta_1^t}$, $\hat{v}_t = \frac{v_t}{1-\beta_2^t}$, $x_{t+1} = x_t - \frac{\eta}{\sqrt{\hat{v}_t} + \epsilon} \hat{m}_t$ |
+| **Adam** | First and second moment estimation with bias corrections: $m_t = \beta_1 m_{t-1} + (1-\beta_1) g_t$, $v_t = \beta_2 v_{t-1} + (1-\beta_2) g_t^2$, $\hat{m}_t = \frac{m_t}{1-\beta_1^t}$, $\hat{v}_t = \frac{v_t}{1-\beta_2^t}$, $x_{t+1} = x_t - \frac{\eta}{\sqrt{\hat{v}_t} + \epsilon} \hat{m}_t$ |
 
 *In Module 2, all optimizers execute via a unified `mini_batch_optimizer` pipeline supporting batch sizes from $1$ (pure stochastic) up to $N$ (full-batch).*
 
