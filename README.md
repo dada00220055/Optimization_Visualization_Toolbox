@@ -12,7 +12,7 @@ All algorithms and mathematical gradients are implemented from scratch using **p
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 Optimization algorithms are commonly introduced through compact mathematical update formulas, but static equations fail to convey intuitive behaviors such as adaptive scaling, momentum acceleration, stochastic oscillation, or overshooting.
 
@@ -22,9 +22,9 @@ This toolbox bridges this pedagogical gap across two distinct modules:
 
 ---
 
-## 🚀 Key Modules & Architecture
+## Key Modules & Architecture
 
-### 🏔️ Module 1: Mathematical Optimization
+### Module 1: Mathematical Optimization
 Analyzes optimization mechanics on 2D objective landscapes with explicit analytical gradients:
 * **Benchmark Objectives**:
   * **Quadratic Bowl**: Baseline convex surface ($f(x,y)=Ax^2+By^2+Cxy+Dx+Ey+F$) equipped with an automatic eigenvalue positive-definiteness convexity check.
@@ -37,7 +37,7 @@ Analyzes optimization mechanics on 2D objective landscapes with explicit analyti
 
 ---
 
-### 🎯 Module 2: Statistical Learning Optimization
+### Module 2: Statistical Learning Optimization
 Applies optimization to empirical loss minimization via logistic regression:
 * **Synthetic Data Generation (`utils.py`)**:
   * Supports **Linear Gaussian**, **XOR**, and **2 Moons** datasets.
@@ -59,7 +59,7 @@ Applies optimization to empirical loss minimization via logistic regression:
 
 ---
 
-## ⚙️ Implemented Optimizers
+## Implemented Optimizers
 
 All optimizers are implemented from scratch in `optimizers.py`:
 
@@ -74,7 +74,7 @@ All optimizers are implemented from scratch in `optimizers.py`:
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```plaintext
 Optimization_Visualization_Toolbox/
