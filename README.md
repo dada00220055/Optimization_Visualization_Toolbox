@@ -8,6 +8,8 @@
 
 An interactive Python visualization toolbox built for exploring gradient-based numerical optimization algorithms in statistical computing. This project bridges pure mathematical optimization and statistical machine learning by visualizing loss landscapes, optimization trajectories, empirical loss dynamics, and dynamic decision boundaries.
 
+Check out the toolbox here:https://optimizationvisualizationtoolbox-d5gkdzhpdq8re5patbhahr.streamlit.app
+
 All algorithms and mathematical gradients are implemented from scratch using **pure NumPy** vectorization.
 
 ---
